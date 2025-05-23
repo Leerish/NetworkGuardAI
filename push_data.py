@@ -54,4 +54,5 @@ if __name__ == '__main__':
     networkobj = NetworkDataExtract()
     records = networkobj.con_csv_to_json(file_path=FILE_PATH)
     no_records = networkobj.insert_data_mongodb(records , DATABASE , collection)
-    print(no_records)
+    print(no_records) 
+    
