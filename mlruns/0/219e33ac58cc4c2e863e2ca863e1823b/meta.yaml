@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/leeri/Documents/DScybersec/mlruns/0/219e33ac58cc4c2e863e2ca863e1823b/artifacts
+end_time: 1749134483813
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 219e33ac58cc4c2e863e2ca863e1823b
+run_name: awesome-bird-662
+run_uuid: 219e33ac58cc4c2e863e2ca863e1823b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749134477441
+status: 3
+tags: []
+user_id: leeri
