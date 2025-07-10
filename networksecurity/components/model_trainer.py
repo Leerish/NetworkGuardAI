@@ -17,6 +17,8 @@ from sklearn.ensemble import (
     RandomForestClassifier,
 )
 import mlflow
+import dagshub
+dagshub.init(repo_owner='LeerishArvind', repo_name='NetworkGuardAI', mlflow=True)
 
 class ModelTrainer:
     def __init__(self , model_trainer_config : ModelTrainerConfig,
@@ -96,6 +98,10 @@ class ModelTrainer:
         
         network_model = NetworkModel(preprocessor= preprocessor , model = best_model)
         save_object(self.model_trainer_config.trained_model_file_path , obj= network_model)
+        
+        save_object("final_model/model.pkl" , best_model ) 
+        
+        
         
         ## Track MLflow
         self.track_mlflow(best_model , classification_test_metric)
